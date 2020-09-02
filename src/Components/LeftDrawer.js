@@ -69,7 +69,7 @@ export default function LeftDrawer() {
           </ListItem>
           <ListItem button>
             <ListItemIcon><ChatIcon/></ListItemIcon>
-            <ListItemText primary='Contacts' />
+            <ListItemText primary='Feedback' />
           </ListItem>
       </List>
     </div>
