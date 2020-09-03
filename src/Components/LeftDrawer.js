@@ -16,7 +16,6 @@ import TelegramIcon from '@material-ui/icons/Telegram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ChatIcon from '@material-ui/icons/Chat';
 
-
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -50,28 +49,29 @@ export default function LeftDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-      <ListItem button>
-            <ListItemIcon><HomeIcon/></ListItemIcon>
-            <ListItemText primary='Home' />
-          </ListItem>
-          <Divider/>
-          <ListItem button>
-            <ListItemIcon><GitHubIcon /></ListItemIcon>
-            <ListItemText primary='Projects' />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon><InfoIcon/></ListItemIcon>
-            <ListItemText primary='About us' />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon><TelegramIcon/></ListItemIcon>
-            <ListItemText primary='Contacts' />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon><ChatIcon/></ListItemIcon>
-            <ListItemText primary='Feedback' />
-          </ListItem>
+        <ListItem button >
+          <ListItemIcon><HomeIcon /></ListItemIcon>
+          <ListItemText primary='Home' />
+        </ListItem>
+        <Divider />
+        <ListItem button>
+          <ListItemIcon><GitHubIcon /></ListItemIcon>
+          <ListItemText primary='Projects' />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon><InfoIcon /></ListItemIcon>
+          <ListItemText primary='About us' />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon><TelegramIcon /></ListItemIcon>
+          <ListItemText primary='Contacts' />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon><ChatIcon /></ListItemIcon>
+          <ListItemText primary='Feedback' />
+        </ListItem>
       </List>
+
     </div>
   );
 
@@ -80,7 +80,7 @@ export default function LeftDrawer() {
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
           <IconButton onClick={toggleDrawer(anchor, true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <MenuIcon />
+            <MenuIcon />
           </IconButton>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
