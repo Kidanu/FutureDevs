@@ -6,7 +6,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Divider } from '@material-ui/core';
@@ -15,7 +14,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ChatIcon from '@material-ui/icons/Chat';
-
+import { Link } from 'react-router-dom';
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -28,7 +27,7 @@ const useStyles = makeStyles({
 export default function LeftDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    left: false
+    left: false,
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -49,29 +48,38 @@ export default function LeftDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <ListItem button >
-          <ListItemIcon><HomeIcon /></ListItemIcon>
-          <ListItemText primary='Home' />
+        <ListItem >
+          <ListItemIcon>
+            <HomeIcon />
+          </ListItemIcon>
+          <Link to="/">Home</Link>
         </ListItem>
         <Divider />
         <ListItem button>
-          <ListItemIcon><GitHubIcon /></ListItemIcon>
-          <ListItemText primary='Projects' />
+          <ListItemIcon>
+            <GitHubIcon />
+          </ListItemIcon>
+          <Link to="/Projects">Projects</Link>
         </ListItem>
         <ListItem button>
-          <ListItemIcon><InfoIcon /></ListItemIcon>
-          <ListItemText primary='About us' />
+          <ListItemIcon>
+            <InfoIcon />
+          </ListItemIcon>
+          <ListItemText primary="About us" />
         </ListItem>
         <ListItem button>
-          <ListItemIcon><TelegramIcon /></ListItemIcon>
-          <ListItemText primary='Contacts' />
+          <ListItemIcon>
+            <TelegramIcon />
+          </ListItemIcon>
+          <ListItemText primary="Contacts" />
         </ListItem>
         <ListItem button>
-          <ListItemIcon><ChatIcon /></ListItemIcon>
-          <ListItemText primary='Feedback' />
+          <ListItemIcon>
+            <ChatIcon />
+          </ListItemIcon>
+          <ListItemText primary="Feedback" />
         </ListItem>
       </List>
-
     </div>
   );
 
