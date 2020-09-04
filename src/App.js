@@ -1,16 +1,22 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Routes from './Routes';
+import Home from './Home/Home';
+import Projects from './Projects/Projects';
+import Meny from './Components/Meny';
+
 import './App.css';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Routes />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <BrowserRouter >
+      <Meny />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;

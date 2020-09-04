@@ -17,14 +17,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonAppBar(props) {
+export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <LeftDrawer history={props.history} />
+          <LeftDrawer  />
           <Typography variant="h6" className={classes.title}>
             ThreeFutureDevs
           </Typography>

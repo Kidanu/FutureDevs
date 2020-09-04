@@ -14,6 +14,8 @@ import InfoIcon from '@material-ui/icons/Info';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ChatIcon from '@material-ui/icons/Chat';
+import history from './../history';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   list: {
@@ -24,7 +26,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function LeftDrawer(props) {
+export default function LeftDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     left: false,
@@ -34,12 +36,12 @@ export default function LeftDrawer(props) {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
-    console.log(props.history);
 
     setState({ ...state, [anchor]: open });
   };
 
   const list = (anchor) => (
+
     <div
       className={clsx(classes.list, {
         [classes.fullList]: anchor === 'bottom' || anchor === 'top',
@@ -49,20 +51,20 @@ export default function LeftDrawer(props) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <ListItem button onClick={props.history.push('/')}>
+        <ListItem button component={Link} to={"/"} >
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
         <Divider />
-        <ListItem button onClick={props.history.push('/projects')}>
+        <ListItem button component={Link} to={"/projects"}>
           <ListItemIcon>
             <GitHubIcon />
           </ListItemIcon>
-          <ListItemText primary="Project" />
+          <ListItemText primary="Projects" />
         </ListItem>
-        <ListItem button>
+        <ListItem button component={Link} to={"/"}>
           <ListItemIcon>
             <InfoIcon />
           </ListItemIcon>
