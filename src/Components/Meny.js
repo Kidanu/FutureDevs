@@ -1,6 +1,6 @@
 import React from 'react';
-import ButtonAppBar from './ButtonAppBar';
+import NavigatonBar from './NavigatonBar';
 
 export default function Meny() {
-  return <ButtonAppBar />;
+  return <NavigatonBar />;
 }

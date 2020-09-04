@@ -62,19 +62,19 @@ export default function LeftDrawer() {
           </ListItemIcon>
           <ListItemText primary="Projects" />
         </ListItem>
-        <ListItem button component={Link} to={'/'}>
+        <ListItem button component={Link} to={'/aboutus'}>
           <ListItemIcon>
             <InfoIcon />
           </ListItemIcon>
           <ListItemText primary="About us" />
         </ListItem>
-        <ListItem button>
+        <ListItem button component={Link} to={'/contacts'}>
           <ListItemIcon>
             <TelegramIcon />
           </ListItemIcon>
           <ListItemText primary="Contacts" />
         </ListItem>
-        <ListItem button>
+        <ListItem button component={Link} to={'/feedback'}>
           <ListItemIcon>
             <ChatIcon />
           </ListItemIcon>

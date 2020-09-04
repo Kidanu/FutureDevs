@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 
-export default class Home extends Component {
+export default class Projects extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="Projects">
         <div className="lander">
-          <h1>PPP page</h1>
-          <p>A simple app showing react button click navigation</p>
-          <form>
-            <Button variant="btn btn-success" to="/">
-              Click button to view products
-            </Button>
-          </form>
+          <h1>Projects page</h1>
         </div>
       </div>
     );

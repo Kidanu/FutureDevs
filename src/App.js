@@ -3,6 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
+import AboutUs from './AboutUs/AboutUs';
+import Contacts from './Contacts/Contacts';
+import Feedback from './Feedback/Feedback';
 import Meny from './Components/Meny';
 
 import './App.css';
@@ -14,6 +17,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/projects" component={Projects} />
+        <Route exact path="/aboutus" component={AboutUs} />
+        <Route exact path="/contacts" component={Contacts} />
+        <Route exact path="/feedback" component={Feedback} />
       </Switch>
     </BrowserRouter>
   );
