@@ -11,7 +11,6 @@ export default class Home extends Component {
         <div className="lander">
           <h1>Home page</h1>
           <p>A simple app showing react button click navigation</p>
-      
         </div>
       </div>
     );

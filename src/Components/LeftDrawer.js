@@ -1,21 +1,20 @@
-import React from 'react';
-import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import { Divider } from '@material-ui/core';
 import Drawer from '@material-ui/core/Drawer';
+import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import { Divider } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import ChatIcon from '@material-ui/icons/Chat';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
+import MenuIcon from '@material-ui/icons/Menu';
 import TelegramIcon from '@material-ui/icons/Telegram';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import ChatIcon from '@material-ui/icons/Chat';
-import history from './../history';
-import { Link } from "react-router-dom";
+import clsx from 'clsx';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   list: {
@@ -41,7 +40,6 @@ export default function LeftDrawer() {
   };
 
   const list = (anchor) => (
-
     <div
       className={clsx(classes.list, {
         [classes.fullList]: anchor === 'bottom' || anchor === 'top',
@@ -51,20 +49,20 @@ export default function LeftDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <ListItem button component={Link} to={"/"} >
+        <ListItem button component={Link} to={'/'}>
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
         <Divider />
-        <ListItem button component={Link} to={"/projects"}>
+        <ListItem button component={Link} to={'/projects'}>
           <ListItemIcon>
             <GitHubIcon />
           </ListItemIcon>
           <ListItemText primary="Projects" />
         </ListItem>
-        <ListItem button component={Link} to={"/"}>
+        <ListItem button component={Link} to={'/'}>
           <ListItemIcon>
             <InfoIcon />
           </ListItemIcon>
