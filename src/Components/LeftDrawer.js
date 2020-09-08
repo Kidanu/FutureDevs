@@ -6,7 +6,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
-import ChatIcon from '@material-ui/icons/Chat';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
@@ -73,12 +72,6 @@ export default function LeftDrawer() {
             <TelegramIcon />
           </ListItemIcon>
           <ListItemText primary="Contacts" />
-        </ListItem>
-        <ListItem button component={Link} to={'/feedback'}>
-          <ListItemIcon>
-            <ChatIcon />
-          </ListItemIcon>
-          <ListItemText primary="Feedback" />
         </ListItem>
       </List>
     </div>

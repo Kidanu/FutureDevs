@@ -4,8 +4,12 @@ import Avatar from '@material-ui/core/Avatar';
 import { deepOrange, deepPurple } from '@material-ui/core/colors';
 import ArmenA from '../Images/Avatars/ArmenA.png';
 import TobiasBild from '../Images/Avatars/TobiasBild.png';
-
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './OurAvatars.css';
+import { Typography } from '@material-ui/core';
+import Fab from '@material-ui/core/Fab';
+import Card from '@material-ui/core/Card';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,9 +18,10 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(4),
     },
   },
+
   large: {
-    width: theme.spacing(24),
-    height: theme.spacing(24),
+    width: theme.spacing(18),
+    height: theme.spacing(18),
   },
   orange: {
     color: theme.palette.getContrastText(deepOrange[500]),
@@ -39,12 +44,37 @@ export default function LetterAvatars() {
 
     <div className="OurAvatars"><h1>This is us</h1>
       <div className="OurAvatarPics">
-        <div className={classes.root}>
-          <Avatar className={classes.purple}>C</Avatar>
-          <Avatar alt="Armen Aleksandrian" src={TobiasBild} className={classes.large} />
-          <Avatar alt="Armen Aleksandrian" src={ArmenA} className={classes.large} />
+        <Card style={{ backgroundColor: '#00416d' }} className="ProfileCard">
+          <Avatar className={classes.large}>C</Avatar>
+          <Typography variant="h6" style={{ color: '#f8bd7f' }}>Chjun-Chi</Typography>
+          <Typography variant="h6" style={{ color: '#f8bd7f' }}>Chiu</Typography>
+          <div className="ProfileBtn">
+            <Fab variant="extended" color="primary"><LinkedInIcon />View Profile</Fab>
+          </div>
+        </Card>
+        <div>
+
+          <Card style={{ backgroundColor: '#00416d' }} className="ProfileCard">
+            <Avatar alt="Tobias Mindell" src={TobiasBild} className={classes.large} />
+            <Typography variant="h6" style={{ color: '#f8bd7f' }}>Tobias</Typography>
+            <Typography variant="h6" style={{ color: '#f8bd7f' }}>Mindell</Typography>
+            <div className="ProfileBtn">
+              <Fab variant="extended" color="primary"><LinkedInIcon />View Profile</Fab>
+            </div>
+          </Card >
+
         </div>
-      </div >
+        <div>
+          <Card style={{ backgroundColor: '#00416d' }} className="ProfileCard">
+            <Avatar alt="Armen Aleksandrian" src={ArmenA} className={classes.large} />
+            <Typography variant="h6" style={{ color: '#f8bd7f' }}>Armen</Typography>
+            <Typography variant="h6" style={{ color: '#f8bd7f' }}>Aleksandrian</Typography>
+            <div className="ProfileBtn">
+              <Fab color="primary" variant="extended"><LinkedInIcon /> View Profile</Fab>
+            </div>
+          </Card >
+        </div>
+      </div>
     </div>
   );
 }

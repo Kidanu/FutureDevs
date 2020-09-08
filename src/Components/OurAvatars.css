@@ -1,8 +1,26 @@
 .OurAvatars{
     text-align: center;
 }
+h1{
+    color: #68523b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .OurAvatarPics{
+    display: inline-flex;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+}
+.ProfileCard{
+    margin: 10px;
+    padding: 25px;
+    box-shadow: 0 20px 20px 0 rgba(150, 28, 28, 0.2);
+    transition: 0.3s;
+}
+.ProfileCard:hover {
+    box-shadow: 10px 20px 20px 0 burlywood;
+    transform: rotateX(2deg)  rotateY(10deg) rotateZ(2deg);
+  }
+.ProfileBtn{
+    margin-top: 20px;
 }
