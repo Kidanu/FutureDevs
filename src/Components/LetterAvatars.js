@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import { deepOrange, deepPurple } from '@material-ui/core/colors';
 import ArmenA from '../Images/Avatars/ArmenA.png';
+import TobiasBild from '../Images/Avatars/TobiasBild.png';
+
 import './OurAvatars.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -39,7 +41,7 @@ export default function LetterAvatars() {
       <div className="OurAvatarPics">
         <div className={classes.root}>
           <Avatar className={classes.purple}>C</Avatar>
-          <Avatar className={classes.orange}>T</Avatar>
+          <Avatar alt="Armen Aleksandrian" src={TobiasBild} className={classes.large} />
           <Avatar alt="Armen Aleksandrian" src={ArmenA} className={classes.large} />
         </div>
       </div >
