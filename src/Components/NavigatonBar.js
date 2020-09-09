@@ -7,6 +7,7 @@ import LeftDrawer from './LeftDrawer';
 import Fab from '@material-ui/core/Fab';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InfoIcon from '@material-ui/icons/Info';
+import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -33,8 +34,8 @@ export default function NavigatonBar() {
             Three Future Devs
           </Typography>
           <div className="Btns">
-            <Fab variant="extended" color="secondary" style={{ marginRight: '20px', paddingRight: '15px' }}><GitHubIcon style={{ paddingRight: '10px' }} /> Projects</Fab>
-            <Fab variant="extended" color="secondary" style={{ paddingRight: '15px' }}><InfoIcon style={{ paddingRight: '10px' }} /> About Us</Fab>
+            <Fab component={Link} to={"/projects"} variant="extended" color="secondary" style={{ marginRight: '20px', paddingRight: '15px' }}><GitHubIcon style={{ paddingRight: '10px' }} /> Projects</Fab>
+            <Fab component={Link} to={"/aboutus"} variant="extended" color="secondary" style={{ paddingRight: '15px' }}><InfoIcon style={{ paddingRight: '10px' }} /> About Us</Fab>
           </div>
         </Toolbar>
       </AppBar>

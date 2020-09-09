@@ -9,7 +9,6 @@ import './OurAvatars.css';
 import { Typography } from '@material-ui/core';
 import Fab from '@material-ui/core/Fab';
 import Card from '@material-ui/core/Card';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {

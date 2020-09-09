@@ -10,7 +10,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import MenuIcon from '@material-ui/icons/Menu';
-import TelegramIcon from '@material-ui/icons/Telegram';
 import clsx from 'clsx';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -66,12 +65,6 @@ export default function LeftDrawer() {
             <InfoIcon />
           </ListItemIcon>
           <ListItemText primary="About us" />
-        </ListItem>
-        <ListItem button component={Link} to={'/contacts'}>
-          <ListItemIcon>
-            <TelegramIcon />
-          </ListItemIcon>
-          <ListItemText primary="Contacts" />
         </ListItem>
       </List>
     </div>
