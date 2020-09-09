@@ -20,16 +20,16 @@ export default class Projects extends Component {
                   Summary
                 </p>
                 <Button variant="contained" color="primary" href="https://github.com/Xarczuz/CashReportV3">
-                  <GitHubIcon /> GitHub
+                  <GitHubIcon style={{ paddingRight: '10px' }} /> GitHub
                 </Button>
               </Card>
-              <Card className="ProjectCard">
+              <Card style={{ backgroundColor: 'lightgray' }} className="ProjectCard">
                 <h4>Project 2</h4>
-                <p>
+                <p className="Summary">
                   Summary
                 </p>
-                <Button variant="outlined" color="primary" href="">
-                  <GitHubIcon /> GitHub
+                <Button variant="contained" color="primary" href="https://github.com/Xarczuz/CashReportV3">
+                  <GitHubIcon style={{ paddingRight: '10px' }} /> GitHub
                 </Button>
               </Card>
             </Paper>
