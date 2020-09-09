@@ -31,7 +31,7 @@ export default function NavigatonBar() {
         <Toolbar>
           <LeftDrawer />
           <Typography variant="h6" className={classes.title}>
-            Three Future Devs
+            Three Awsome Devs
           </Typography>
           <div className="Btns">
             <Fab component={Link} to={"/projects"} variant="extended" color="secondary" style={{ marginRight: '20px', paddingRight: '15px' }}><GitHubIcon style={{ paddingRight: '10px' }} /> Projects</Fab>

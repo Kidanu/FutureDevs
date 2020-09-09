@@ -19,7 +19,6 @@ h1{
 }
 .ProfileCard:hover {
     box-shadow: 10px 20px 20px 0 burlywood;
-    transform: rotateX(2deg)  rotateY(10deg) rotateZ(2deg);
   }
 .ProfileBtn{
     margin-top: 20px;

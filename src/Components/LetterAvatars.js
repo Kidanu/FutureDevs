@@ -48,7 +48,7 @@ export default function LetterAvatars() {
           <Typography variant="h6" style={{ color: '#f8bd7f' }}>Chjun-Chi</Typography>
           <Typography variant="h6" style={{ color: '#f8bd7f' }}>Chiu</Typography>
           <div className="ProfileBtn">
-            <Fab variant="extended" color="primary"><LinkedInIcon />View Profile</Fab>
+            <Fab variant="extended" color="primary" href="www.linkedin.com/in/chjun-chi-chiu-9b2115179/"><LinkedInIcon />View Profile</Fab>
           </div>
         </Card>
         <div>
@@ -58,7 +58,7 @@ export default function LetterAvatars() {
             <Typography variant="h6" style={{ color: '#f8bd7f' }}>Tobias</Typography>
             <Typography variant="h6" style={{ color: '#f8bd7f' }}>Mindell</Typography>
             <div className="ProfileBtn">
-              <Fab variant="extended" color="primary"><LinkedInIcon />View Profile</Fab>
+              <Fab variant="extended" color="primary" href="www.linkedin.com/in/tobias-mindell-kidanu-b9a052160/"><LinkedInIcon />View Profile</Fab>
             </div>
           </Card >
 
@@ -69,7 +69,7 @@ export default function LetterAvatars() {
             <Typography variant="h6" style={{ color: '#f8bd7f' }}>Armen</Typography>
             <Typography variant="h6" style={{ color: '#f8bd7f' }}>Aleksandrian</Typography>
             <div className="ProfileBtn">
-              <Fab color="primary" variant="extended"><LinkedInIcon /> View Profile</Fab>
+              <Fab variant="extended" color="primary" href="https://www.linkedin.com/in/armen-aleksandrian-45474149/"><LinkedInIcon /> View Profile</Fab>
             </div>
           </Card >
         </div>
