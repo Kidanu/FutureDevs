@@ -4,6 +4,7 @@ import Avatar from '@material-ui/core/Avatar';
 import { deepOrange, deepPurple } from '@material-ui/core/colors';
 import ArmenA from '../Images/Avatars/ArmenA.png';
 import TobiasBild from '../Images/Avatars/TobiasBild.png';
+import ChjunChiBild from '../Images/Avatars/ChjunchiBild.jpg';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './OurAvatars.css';
 import { Typography } from '@material-ui/core';
@@ -40,38 +41,56 @@ export default function LetterAvatars() {
   const classes = useStyles();
 
   return (
-
-    <div className="OurAvatars"><h1>This is us</h1>
+    <div className="OurAvatars">
+      <h1>This is us</h1>
       <div className="OurAvatarPics">
         <Card style={{ backgroundColor: '#00416d' }} className="ProfileCard">
-          <Avatar className={classes.large}>C</Avatar>
-          <Typography variant="h6" style={{ color: '#f8bd7f' }}>Chjun-Chi</Typography>
-          <Typography variant="h6" style={{ color: '#f8bd7f' }}>Chiu</Typography>
+          <Avatar alt="Chjun-Chi Chiu" src={ChjunChiBild} className={classes.large} />
+          <Typography variant="h6" style={{ color: '#f8bd7f' }}>
+            Chjun-Chi
+          </Typography>
+          <Typography variant="h6" style={{ color: '#f8bd7f' }}>
+            Chiu
+          </Typography>
           <div className="ProfileBtn">
-            <Fab variant="extended" color="primary" href="www.linkedin.com/in/chjun-chi-chiu-9b2115179/"><LinkedInIcon />View Profile</Fab>
+            <Fab variant="extended" color="primary" href="https://www.linkedin.com/in/chjun-chi-chiu-9b2115179/">
+              <LinkedInIcon />
+              View Profile
+            </Fab>
           </div>
         </Card>
         <div>
-
           <Card style={{ backgroundColor: '#00416d' }} className="ProfileCard">
             <Avatar alt="Tobias Mindell" src={TobiasBild} className={classes.large} />
-            <Typography variant="h6" style={{ color: '#f8bd7f' }}>Tobias</Typography>
-            <Typography variant="h6" style={{ color: '#f8bd7f' }}>Mindell</Typography>
+            <Typography variant="h6" style={{ color: '#f8bd7f' }}>
+              Tobias
+            </Typography>
+            <Typography variant="h6" style={{ color: '#f8bd7f' }}>
+              Mindell
+            </Typography>
             <div className="ProfileBtn">
-              <Fab variant="extended" color="primary" href="www.linkedin.com/in/tobias-mindell-kidanu-b9a052160/"><LinkedInIcon />View Profile</Fab>
+              <Fab variant="extended" color="primary" href="https://www.linkedin.com/in/tobias-mindell-kidanu-b9a052160/">
+                <LinkedInIcon />
+                View Profile
+              </Fab>
             </div>
-          </Card >
-
+          </Card>
         </div>
         <div>
           <Card style={{ backgroundColor: '#00416d' }} className="ProfileCard">
             <Avatar alt="Armen Aleksandrian" src={ArmenA} className={classes.large} />
-            <Typography variant="h6" style={{ color: '#f8bd7f' }}>Armen</Typography>
-            <Typography variant="h6" style={{ color: '#f8bd7f' }}>Aleksandrian</Typography>
+            <Typography variant="h6" style={{ color: '#f8bd7f' }}>
+              Armen
+            </Typography>
+            <Typography variant="h6" style={{ color: '#f8bd7f' }}>
+              Aleksandrian
+            </Typography>
             <div className="ProfileBtn">
-              <Fab variant="extended" color="primary" href="https://www.linkedin.com/in/armen-aleksandrian-45474149/"><LinkedInIcon /> View Profile</Fab>
+              <Fab variant="extended" color="primary" href="https://www.linkedin.com/in/armen-aleksandrian-45474149/">
+                <LinkedInIcon /> View Profile
+              </Fab>
             </div>
-          </Card >
+          </Card>
         </div>
       </div>
     </div>
